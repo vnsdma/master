@@ -18,7 +18,15 @@
 	  		height: 100vh;
 	  		position: absolute;
 	  		z-index: -1;
+			.btn {
+ 			 border: none;
+ 			 background-color: inherit;
+  			padding: 14px 28px;
+  			font-size: 16px;
+  			cursor: pointer;
+  			display: inline-block;
 	  	}
+		.btn:hover {background: #eee;}
 	  	.ubuntu{
 	  		background: linear-gradient(to left,#8942A8,#BA382F);
 	  		opacity: 0;
@@ -261,7 +269,7 @@
 	  		}
   		}
   		@media only screen and (max-width: 500px){
-  			.ucapan{
+			.ucapan{
 		  		font-size: 10pt;
 		  	}
 		  	.quotes{
@@ -271,6 +279,7 @@
 	  </style>
 	</head>
 	<body onload="init_auto()">
+		 <button onclick="window.location.href = 'https://youare.now.sh';">Click Here</button>
 		<div class="kontrol">
 			<div class="panah"></div>
 			<div class="custom-control custom-radio">
@@ -346,7 +355,7 @@
 				00:00:00
 			</div>
 			<div class="ucapan" id="quote">
-				
+			<button class="btn success">Success</button>
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
