@@ -12,7 +12,8 @@
 	  		background: black;
 	  		width: 100%;
 	  		height: 100vh;
-		.bg{
+	  	}
+	  	.bg{
 	  		width: 100%;
 	  		height: 100vh;
 	  		position: absolute;
@@ -260,7 +261,7 @@
 	  		}
   		}
   		@media only screen and (max-width: 500px){
-			.ucapan{
+  			.ucapan{
 		  		font-size: 10pt;
 		  	}
 		  	.quotes{
@@ -270,6 +271,7 @@
 	  </style>
 	</head>
 	<body onload="init_auto()">
+		<div class="kontrol">
 			<div class="panah"></div>
 			<div class="custom-control custom-radio">
 		      <input type="radio" class="custom-control-input" id="customRadio0" name="example1" checked>
@@ -309,7 +311,7 @@
 		    </div> 
 		    <div class="custom-control custom-radio">
 		      <input type="radio" class="custom-control-input" id="customRadio9" name="example1">
-		      <label class="custom-control-label" for="customRadio9">RGB Gaming :v</label>
+		      <label class="custom-control-label" for="customRadio9">RGB Gaming</label>
 		    </div> 
 		</div>
 		<div class="bg ubuntu"></div>
@@ -344,8 +346,8 @@
 				00:00:00
 			</div>
 			<div class="ucapan" id="quote">
+				
 			</div>
-		<div class="kontrol">
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -623,7 +625,7 @@
 				console.log(auto);
 			}
 
-			var txt = 'Halo Naurah';
+			var txt = 'Halo simp ku sayang';
 			var txt2 = 'txt';
 
 			function checkTime(i) {
@@ -653,7 +655,7 @@
 					txt2=txt;
 				}
 				else if(H<9){
-					txt='Good Morning You:)';
+					txt='Good Morning You :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
@@ -665,25 +667,25 @@
 					txt2=txt;
 				}
 				else if(H<16){
-					txt='Good Afternoon Naurah :)';
+					txt='Good Afternoon :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<19){
-					txt='Good Afternoon, Take a Rest!';
+					txt='Good Afternoon, Take a Rest :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<23){
-					txt='Good Evening Naurah !';
+					txt='Good Evening :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
 				}
 				else if(H<=24){
-					txt='Time to Sleep, Good Night:)';
+					txt='Time to Sleep, Good Night :)';
 					if(txt != txt2 && !starting)
 						document.getElementById("quote").innerHTML = txt;
 					txt2=txt;
@@ -723,7 +725,7 @@
 				}, 500);
 			}
 			startTime();
-			function init_auto(){
+			function init_auto(){1
 				randomQuote();
 				if ((H>23) || (H<4)){
 					midnight();
